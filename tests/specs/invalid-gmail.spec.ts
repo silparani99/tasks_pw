@@ -1,4 +1,4 @@
-import{test,expect} from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
 test('Invalid gmail validatation',async({page})=>{
     await page.goto('https://vwo.com/free-trial/?utm_medium=website&utm_source=login-page&utm_campaign=mof_eg_loginpage');

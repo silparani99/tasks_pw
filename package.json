@@ -1,15 +1,19 @@
 {
-  "name": "pw_sri_test1",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "name": "playwright-ts-framework",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reusable Playwright end-to-end testing framework written in TypeScript.",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "codegen": "playwright codegen",
+    "show-report": "playwright show-report"
+  },
   "devDependencies": {
-    "@playwright/test": "^1.58.2",
-    "@types/node": "^25.3.0"
+    "@playwright/test": "^1.43.0",
+    "@types/node": "^20.11.0",
+    "typescript": "^5.4.0"
   }
 }
