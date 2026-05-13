@@ -10,15 +10,12 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
-  reporter: [
-    ['list'],
-    ['html', { outputFolder: 'playwright-report', open: 'never' }],
-    ['./utils/CustomTTAReports.ts'],
-  ],
+  reporter: 'list',
   use: {
     baseURL: 'https://vwo.com',
     actionTimeout: 10 * 1000,
     navigationTimeout: 30 * 1000,
+    headless: false,
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
