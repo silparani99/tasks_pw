@@ -1,5 +1,4 @@
 import { test, expect } from '@playwright/test';
-import { networkInterfaces } from 'node:os';
 
 test('SimpleMaps India SVG page loads and contains SVG paths', async ({ page }) => {
   await page.goto('https://simplemaps.com/svg/country/in', { waitUntil: 'domcontentloaded' });
